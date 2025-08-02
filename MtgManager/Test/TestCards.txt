@@ -1,0 +1,58 @@
+
+# example query
+# frame:2015 t:creature legal:commander order:date -is:reprint
+
+# one of each matcher
+# 2015 creature
+Avacyn, Guardian Angel
+# 2015 instant
+Ephemeral Shields
+# 2003 frames
+Cast Through Time
+# 1998-2003 frame center aligned
+Yawgmoth's Will
+Recoup
+# 1994-1998 old style bottom left
+Anvil of Bogardan
+Merchant Scroll
+# pre 1994 old style bottom left large
+Cleansing
+
+# set types
+# commander set type
+Arachnogenesis
+# masters set type
+Chatter of the Squirrel
+# modern horizons (draft innovation set type)
+Ghostfire Slice
+# game night (box set type)
+Militant Angel
+# masterpiece set type
+Valakut, the Molten Pinnacle
+
+# double faced cards
+# double faced land
+Barkchannel Pathway // Tidechannel Pathway
+# split card, multifaced but still has card back
+Expansion // Explosion
+# front creature, back equipment
+Halvar, God of Battle // Sword of the Realms
+
+# other edge cases
+# oldest 2015 frame is from an online only set
+Rampant Growth
+# oldest 2015 frame is borderless Amonkhet Invocations
+Omniscience
+# story spotlight (has "mtgstory.com" text with copyright)
+Thousand-Year Storm
+# release date is recent via "The List" set
+Mogg Maniac
+# prefer a foiled recent copy over old 1994 alpha card
+Black Vise
+# no 'normal' black border, full art card is preffered
+Scavenged Brawler
+# colon in name
+Vault 21: House Gambit
+
+# proxy of specific set
+# Black Lotus [LEB]
