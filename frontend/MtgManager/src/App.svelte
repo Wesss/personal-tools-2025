@@ -1,11 +1,15 @@
 <script lang="ts">
   import Counter from './lib/Counter.svelte'
+  import ApiTest from './lib/ApiTest.svelte'
 </script>
 
 <main>
   HELLO!asdf
-  <div class="card">
+  <div>
     <Counter />
+  </div>
+  <div>
+    <ApiTest />
   </div>
 </main>
 

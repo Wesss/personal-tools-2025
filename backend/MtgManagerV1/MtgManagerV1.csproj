@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+	<TargetFramework>net6.0-windows</TargetFramework>
+	  <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvTextFieldParser" Version="1.2.2" />
+    <PackageReference Include="log4net" Version="2.0.14" />
+    <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="13.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleUtils\ConsoleUtils.csproj" />
+    <ProjectReference Include="..\DomainUtils\DomainUtils.csproj" />
+    <ProjectReference Include="..\HttpUtils\HttpUtils.csproj" />
+    <ProjectReference Include="..\SqliteUtils\SqliteUtils.csproj" />
+    <ProjectReference Include="..\WindowUtils\WindowsUtils.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

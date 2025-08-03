@@ -1,0 +1,6 @@
+@MtgManager_HostAddress = http://localhost:5070
+
+GET {{MtgManager_HostAddress}}/API/
+Accept: application/json
+
+###
