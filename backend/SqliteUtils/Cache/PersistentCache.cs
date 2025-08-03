@@ -8,14 +8,13 @@ namespace SqliteUtils.Cache
     {
         //private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod()?.DeclaringType);
 
-        private const string CachePathBase = @"D:\WindowsTools\CacheUtils\PersistentCache\";
         private readonly SqliteORM<CacheRow> cacheORM;
 
         private bool disposedValue;
 
-        public PersistentCache(string group)
+        public PersistentCache(string path, string group)
         {
-            cacheORM = new SqliteORM<CacheRow>(Path.Combine(CachePathBase, $"{group}.sqlite"));
+            cacheORM = new SqliteORM<CacheRow>(Path.Combine(path, $"PersistentCache-{group}.sqlite"));
         }
 
         /// <summary>

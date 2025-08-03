@@ -33,6 +33,7 @@ information, downloading card data once per week or right after set releases wou
         */
 
         private const string CacheGroup = "MtgManager.GenerateProxies.ScryfallApiClient";
+        private const string CachePath = @"D:/PersonalTools2025/MtgManager";
         /// <summary>
         /// 10 per second
         /// </summary>
@@ -51,7 +52,7 @@ information, downloading card data once per week or right after set releases wou
 
         public ScryfallApiClient()
         {
-            cache = new PersistentCache(CacheGroup);
+            cache = new PersistentCache(CachePath, CacheGroup);
             httpClient = GlobalHttpClient.GetClient();
             lastReq = DateTime.MinValue;
 
