@@ -16,14 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleUtils\ConsoleUtils.csproj" />
-    <ProjectReference Include="..\DomainUtils\DomainUtils.csproj" />
-    <ProjectReference Include="..\HttpUtils\HttpUtils.csproj" />
-    <ProjectReference Include="..\SqliteUtils\SqliteUtils.csproj" />
-    <ProjectReference Include="..\WindowUtils\WindowsUtils.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="log4net.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

@@ -1,8 +1,8 @@
 ﻿using Dapper;
-using SqliteUtils.ORM;
 using System.Collections.Generic;
+using Utils.Sqlite.ORM;
 
-namespace SqliteUtils.Cache
+namespace Utils.Sqlite.Cache
 {
     public class PersistentCache : IDisposable
     {

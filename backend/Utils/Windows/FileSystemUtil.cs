@@ -1,5 +1,4 @@
-﻿
-namespace WindowsUtils
+﻿namespace Utils.Windows
 {
     public class FileSystemUtil
     {

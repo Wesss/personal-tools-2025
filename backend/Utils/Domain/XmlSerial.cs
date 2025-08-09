@@ -22,7 +22,6 @@ namespace DomainUtils
     /// </summary>
     public abstract class XmlSerial : IXmlSerial
     {
-        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(MethodBase.GetCurrentMethod()?.DeclaringType);
         private static readonly IExtendedXmlSerializer ser;
 
         private static readonly XmlWriterSettings writeSettings = new() { Indent = true };
@@ -153,8 +152,6 @@ namespace DomainUtils
 
     public static class IXmlSerialExtensions
     {
-        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(MethodBase.GetCurrentMethod()?.DeclaringType);
-
         /// <summary>
         /// Returns a string containing this object serialized.
         /// </summary>

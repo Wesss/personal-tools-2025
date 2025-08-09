@@ -1,16 +1,9 @@
-﻿using Dapper;
-using DomainUtils.Disposable;
-using Microsoft.Data.Sqlite;
-using System.Drawing;
-using System.Linq;
-using System.Reflection;
-using System.Text;
+﻿using System.Reflection;
 
-namespace SqliteUtils.ORM
+namespace Utils.Sqlite.ORM
 {
     public abstract class SqliteRow
     {
-        //private static readonly log4net.ILog log = log4net.LogManager.GetLogger(MethodBase.GetCurrentMethod()?.DeclaringType);
     }
 
     public enum SqliteColumnType

@@ -1,6 +1,6 @@
-﻿using SqliteUtils.ORM;
+﻿using Utils.Sqlite.ORM;
 
-namespace SqliteUtils.Cache
+namespace Utils.Sqlite.Cache
 {
     [SqliteTable("Cache")]
     public class CacheRow : SqliteRow

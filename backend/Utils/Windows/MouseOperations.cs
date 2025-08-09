@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace WindowsUtils
+namespace Utils.Windows
 {
     public class MouseOperations
     {

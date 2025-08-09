@@ -1,15 +1,12 @@
 ﻿using Dapper;
 using Microsoft.Data.Sqlite;
-using SqliteUtils.Cache;
 using System.Reflection;
 using System.Text;
 
-namespace SqliteUtils.ORM
+namespace Utils.Sqlite.ORM
 {
     public class SqliteORM<T> : IDisposable where T : SqliteRow
     {
-        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(MethodBase.GetCurrentMethod()?.DeclaringType);
-
         private readonly SqliteConnection connection;
         private bool initCheck = false;
         private bool disposedValue;
@@ -28,6 +25,7 @@ namespace SqliteUtils.ORM
         public IEnumerable<T> Get(string filter, object? args = null)
         {
             CheckInit();
+            // TODO WESD change to user dapper SQL builder? (see nuget dependency)
             var tableName = GetTableName();
             var sql = new StringBuilder();
             sql.AppendLine($"select *");
